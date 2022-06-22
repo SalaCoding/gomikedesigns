@@ -191,7 +191,7 @@ a:hover{
     margin: 0;
 }
 .navbar-collapse {
-    width: 10%;
+    width: 100%;
 }
 .navbar .nav {
     padding-top: 2px;
@@ -247,34 +247,34 @@ a:hover{
         -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
+    .nav > li .dropdown-menu a:hover{
+        color:#484848;
     }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
+    .nav-invert .site-navigation{
+        left:0;
+        right:0;
     }
-    .nav-center {
-        text-align: center;
+    .nav-center{
+        text-align:center;
     }
     .nav-center .navbar-header {
-        width: 100%;
+        width:100%;
     }
     .nav-center .navbar-header,
     .nav-center .navbar-brand,
-    .nav-center .nav > li {
+    .nav-center .nav > li{
         float: none;
         display: inline-block;
     }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
+    .nav-center .site-navigation{
+        position:relative;
+        width:100%;
+        right:0;
+        margin-right:0px;
+        margin-top:20px;
     }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
+    .nav-center.mini-nav .navbar-toggle{
+        float:none;
         margin: 10px auto 0;
     }
 }
@@ -515,16 +515,7 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
+h1,h2,h3,h4,h5,h6,p,label,.btn,a {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
@@ -723,10 +714,10 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
@@ -803,10 +794,10 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav > li:hover{
         background: rgba(0, 0, 0, .08);
     }
-    .dropdown .dropdown a .caret {
+    .dropdown .dropdown a .caret{
         float: none;
         margin: 5px 0 0 10px!important;
         border: 4px solid black;
@@ -814,48 +805,45 @@ h4 {
         border-right-color: transparent;
         border-left-color: transparent;
     }
-    #hero-bloc .navbar .nav {
+    #hero-bloc .navbar .nav{
         background: rgba(0, 0, 0, .8);
     }
-    #hero-bloc .navbar .nav a {
+    #hero-bloc .navbar .nav a{
         color: rgba(255, 255, 255, .6);
     }
-    .hero {
+    .hero{
         padding: 50px 0;
     }
-    .hero-nav {
+    .hero-nav{
         left: -1px;
         right: -1px;
     }
-    .navbar-collapse {
+    .navbar-collapse{
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
+    .navbar-brand img{
         max-height: 40px;
         width: auto;
     }
-    .nav-invert .navbar-header {
+    .nav-invert .navbar-header{
         float: none;
         width: 100%;
     }
-    .nav-invert .navbar-toggle {
+    .nav-invert .navbar-toggle{
         float: left;
         margin-left: 10px;
     }
-    .bloc {
+    .bloc{
         padding-left: 0;
         padding-right: 0;
     }
-    .bloc-xxl,
-    .bloc-xl,
-    .bloc-lg {
+    .bloc-xxl, .bloc-xl, .bloc-lg{
         padding: 40px 0;
     }
-    .bloc-sm,
-    .bloc-md {
+    .bloc-sm, .bloc-md{
         padding-left: 0;
         padding-right: 0;
     }
