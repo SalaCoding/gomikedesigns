@@ -231,11 +231,10 @@ a:hover{
     z-index:2;
 }
 /* To make the image responsive*/
-/*.text-center img{
-    display: flex;
+.text-center img{
     width:100%;
 }
-.col-sm-4{
+/*.col-sm-4{
     margin-top:20px;
     color: #fff;
 }*/
@@ -816,84 +815,51 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
-    .bloc-tile-2 .container,
-    .bloc-tile-3 .container,
-    .bloc-tile-4 .container,
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
+    .bloc-tile-2 .container,.bloc-tile-3 .container,.bloc-tile-4 .container,.bloc-fill-screen .fill-bloc-top-edge,.bloc-fill-screen .fill-bloc-bottom-edge{
         padding-left: 0;
         padding-right: 0;
     }
-    .a-block {
+    .a-block{
         padding: 0 10px;
     }
-    .btn-dwn {
+    .btn-dwn{
         display: none;
     }
-    .voffset {
+    .voffset{
         margin-top: 5px;
     }
-    .voffset-md {
+    .voffset-md{
         margin-top: 20px;
     }
-    .voffset-lg {
+    .voffset-lg{
         margin-top: 30px;
     }
-    form {
+    form{
         padding: 5px;
     }
-    .close-lightbox {
+    .close-lightbox{
         display: inline-block;
     }
-    .blocsapp-device-iphone5 {
+    .blocsapp-device-iphone5{
         background-size: 216px 425px;
         padding-top: 60px;
         width: 216px;
         height: 425px;
     }
-    .blocsapp-device-iphone5 img {
+    .blocsapp-device-iphone5 img{
         width: 180px;
         height: 320px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px){
     .bloc {
         padding-left: 0;
         padding-right: 0;
     }
-    /*We added this*/
-    .new__col-sm-12{
-        margin-left: 0.5em;
-    }
 }
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
+@media (max-width: 767px){
+    .bloc-mob-center-text{
         text-align: center;
     }
-    /*.new-nav{
-        margin: 1.8em 0 0 0;
-        padding: 0;
-    }
-    p .material-icons{
-        position: absolute;
-        top: 50px;
-        left:26.4em;
-        margin-right: 18px;
-        color: rgb(123, 123, 123);
-    }
-    p .material-icons:hover > .collapse{
-        color: #c27956;
-    }
-    .space-between li{
-        margin: 0 0 0 -2.3em;
-        width: 48em;
-        padding: 10px;
-    }
-    /*We added this*/
-    /*.new__col-sm-12{
-        margin-left: 0.5em;
-    }*/
-    
 }
