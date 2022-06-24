@@ -234,10 +234,6 @@ a:hover{
 .text-center img{
     width:100%;
 }
-/*.col-sm-4{
-    margin-top:20px;
-    color: #fff;
-}*/
 @media (min-width: 768px){
     .site-navigation{
         position: absolute;
