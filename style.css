@@ -520,14 +520,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn {
     text-align: center;
     font-weight: lighter;
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 p{
     font-size: 16px;
 }
 .tight-width-whitespace{
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 .h1{
     font-size: 20px;
@@ -543,7 +543,7 @@ p{
 }
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 h2 {
     font-size: 22px;
@@ -553,25 +553,25 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333!important;
 }
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
-    box-shadow: 0px 0px 0px #000000;
+    margin: auto;
+    box-shadow: 0px 0px 0px #000;
 }
 h1 {
-    color: #333333!important;
+    color: #333!important;
 }
 h4 {
-    color: #333333!important;
+    color: #333!important;
 }
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
 }
 .white {
-    color: #FFF!important;
+    color: #fff!important;
 }
 .portfolio-thumb {
     margin-bottom: 24px;
@@ -605,17 +605,8 @@ h4 {
 .bgc-atomic-tangerine {
     background: #F3976C;
 }
-/*We added this*/
-/*.new__col-sm-12{
-   margin-left: 4.5em;
-}*/
-/*------------------------------------------*/
-/*.new__tc-white {
-    display: flex;     /*Little touch here*/
-   /* flex-wrap: wrap;       /*Little touch here*/
-/*}*/
 .tc-white {
-    color: #fff!important; /*Goo like this*/
+    color: #fff!important;
 }
 .btn-atomic-tangerine {
     background: #F3976C;
@@ -631,27 +622,27 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #ccc!important; /* GOOD */
+    color: #ccc!important;
 }
 
 .ltc-atomic-tangerine {
     color: #F3976C!important;
 }
 
-.ltc-atomic-tangerine:hover {
+.ltc-atomic-tangerine:hover{
     color: #c27956!important;
 }
 
-.icon-dark-slate-blue {
+.icon-dark-slate-blue{
     color: #364577!important;
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+.bg-dots-bg{
     background-image: url("img/dots-bg.png");
 }
 
-.bg-lines-h2-bg {
+.bg-lines-h2-bg{
     background-image: url("img/lines-h2-bg.png");
 }
 
@@ -663,7 +654,7 @@ h4 {
     background-image: url("img/atlanta%20made%20sign%20orange.jpg");
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px){
     .bloc {
         padding-left: 20px;
         padding-right: 20px;
@@ -681,7 +672,7 @@ h4 {
     .navbar .nav {
         max-width: 80%;
     }
-    .nav-center.navbar .nav {
+    .nav-center.navbar .nav{
         max-width: 100%;
     }
 }

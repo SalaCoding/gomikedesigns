@@ -3015,12 +3015,10 @@ table th[class*=col-] {
 .table-hover>tbody>tr>th.danger:hover {
     background-color: #ebcccc
 }
-
 .table-responsive {
     min-height: .01%;
     overflow-x: auto
 }
-
 @media screen and (max-width:767px) {
     .table-responsive {
         width: 100%;
@@ -3066,14 +3064,12 @@ table th[class*=col-] {
         border-bottom: 0
     }
 }
-
 fieldset {
     min-width: 0;
     padding: 0;
     margin: 0;
     border: 0
 }
-
 legend {
     display: block;
     width: 100%;
@@ -3085,14 +3081,12 @@ legend {
     border: 0;
     border-bottom: 1px solid #e5e5e5
 }
-
 label {
     display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700
 }
-
 input[type=search] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
