@@ -341,18 +341,15 @@ var GMaps = (function(global) {
     for (i = 0; i < events_that_hide_context_menu.length; i++) {
       delete map_options[events_that_hide_context_menu[i]];
     }
-
     for (i = 0; i < events_that_doesnt_hide_context_menu.length; i++) {
       delete map_options[events_that_doesnt_hide_context_menu[i]];
     }
-
     /**
      * Google Maps map instance
      *
      * @type {google.maps.Map}
      */
     this.map = new google.maps.Map(this.el, map_options);
-
     if (markerClustererFunction) {
       /**
        * Marker Clusterer instance
@@ -361,11 +358,9 @@ var GMaps = (function(global) {
        */
       this.markerClusterer = markerClustererFunction.apply(this, [this.map]);
     }
-
     var buildContextMenuHTML = function(control, e) {
       var html = '',
           options = window.context_menu[self.el.id][control];
-
       for (var i in options){
         if (options.hasOwnProperty(i)) {
           var option = options[i];
@@ -373,13 +368,9 @@ var GMaps = (function(global) {
           html += '<li><a id="' + control + '_' + i + '" href="#">' + option.title + '</a></li>';
         }
       }
-
       if (!getElementById('gmaps_context_menu')) return;
-
       var context_menu_element = getElementById('gmaps_context_menu');
-
       context_menu_element.innerHTML = html;
-
       var context_menu_items = context_menu_element.getElementsByTagName('a'),
           context_menu_items_count = context_menu_items.length,
           i;
@@ -427,14 +418,11 @@ var GMaps = (function(global) {
       else {
         buildContextMenuHTML(control, e);
       }
-
       var context_menu_element = getElementById('gmaps_context_menu');
-
       setTimeout(function() {
         context_menu_element.style.display = 'block';
       }, 0);
     };
-
     /**
      * Add a context menu for a map or a marker.
      *
@@ -461,7 +449,6 @@ var GMaps = (function(global) {
           };
         }
       }
-
       ul.id = 'gmaps_context_menu';
       ul.style.display = 'none';
       ul.style.position = 'absolute';
@@ -470,13 +457,10 @@ var GMaps = (function(global) {
       ul.style.listStyle = 'none';
       ul.style.padding = '8px';
       ul.style.boxShadow = '2px 2px 6px #ccc';
-
       if (!getElementById('gmaps_context_menu')) {
         doc.body.appendChild(ul);
       }
-
       var context_menu_element = getElementById('gmaps_context_menu');
-
       google.maps.event.addDomListener(context_menu_element, 'mouseout', function(ev) {
         if (!ev.relatedTarget || !this.contains(ev.relatedTarget)) {
           window.setTimeout(function(){
@@ -485,7 +469,6 @@ var GMaps = (function(global) {
         }
       }, false);
     };
-
     /**
      * Hide the current context menu
      */
@@ -496,55 +479,43 @@ var GMaps = (function(global) {
         context_menu_element.style.display = 'none';
       }
     };
-
     var setupListener = function(object, name) {
       google.maps.event.addListener(object, name, function(e){
         if (e == undefined) {
           e = this;
         }
-
         options[name].apply(this, [e]);
-
         self.hideContextMenu();
       });
     };
-
     //google.maps.event.addListener(this.map, 'idle', this.hideContextMenu);
     google.maps.event.addListener(this.map, 'zoom_changed', this.hideContextMenu);
-
     for (var ev = 0; ev < events_that_hide_context_menu.length; ev++) {
       var name = events_that_hide_context_menu[ev];
-
       if (name in options) {
         setupListener(this.map, name);
       }
     }
-
     for (var ev = 0; ev < events_that_doesnt_hide_context_menu.length; ev++) {
       var name = events_that_doesnt_hide_context_menu[ev];
-
       if (name in options) {
         setupListener(this.map, name);
       }
     }
-
     google.maps.event.addListener(this.map, 'rightclick', function(e) {
       if (options.rightclick) {
         options.rightclick.apply(this, [e]);
       }
-
       if(window.context_menu[self.el.id]['map'] != undefined) {
         self.buildContextMenu('map', e);
       }
     });
-
     /**
      * Trigger a `resize` event, useful if you need to repaint the current map (for changes in the viewport or display / hide actions).
      */
     this.refresh = function() {
       google.maps.event.trigger(this.map, 'resize');
     };
-
     /**
      * Adjust the map zoom to include all the markers added in the map.
      */
@@ -552,7 +523,6 @@ var GMaps = (function(global) {
       var latLngs = [],
           markers_length = this.markers.length,
           i;
-
       for (i = 0; i < markers_length; i++) {
         if(typeof(this.markers[i].visible) === 'boolean' && this.markers[i].visible) {
           latLngs.push(this.markers[i].getPosition());
@@ -561,7 +531,6 @@ var GMaps = (function(global) {
 
       this.fitLatLngBounds(latLngs);
     };
-
     /**
      * Adjust the map zoom to include all the coordinates in the `latLngs` array.
      *
@@ -575,10 +544,8 @@ var GMaps = (function(global) {
       for(i = 0; i < total; i++) {
         bounds.extend(latLngs[i]);
       }
-
       this.map.fitBounds(bounds);
     };
-
     /**
      * Center the map using the `lat` and `lng` coordinates.
      *
@@ -593,7 +560,6 @@ var GMaps = (function(global) {
         callback();
       }
     };
-
     /**
      * Return the HTML element container of the map.
      *
@@ -602,7 +568,6 @@ var GMaps = (function(global) {
     this.getElement = function() {
       return this.el;
     };
-
     /**
      * Increase the map's zoom.
      *
@@ -610,11 +575,9 @@ var GMaps = (function(global) {
      */
     this.zoomIn = function(value) {
       value = value || 1;
-
       this.zoom = this.map.getZoom() + value;
       this.map.setZoom(this.zoom);
     };
-
     /**
      * Decrease the map's zoom.
      *

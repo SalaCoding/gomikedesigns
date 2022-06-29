@@ -348,7 +348,6 @@ button{
     border-radius: 0 0 29px 29px;
 }
 .form-control{
-    border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
 .scrollToTop{
@@ -465,6 +464,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn {
     font-weight: 400;
     color: #575757!important;
 }
+label{
+    width: 470px;
+}
 .container{
     max-width: 1000px;
 }
@@ -503,7 +505,6 @@ p{
     font-weight: 700;
 }
 .social{
-    max-width: 400px;
     margin: auto;
 }
 h2 {
@@ -530,9 +531,6 @@ h1, h4{
 }
 .white{
     color: #fff!important;
-}
-.portfolio-thumb{
-    margin-bottom: 24px;
 }
 .portfolio-row{
     margin-bottom: 44px;
@@ -592,16 +590,16 @@ h1, h4{
     border-color: #364577!important;
 }
 .bg-dots-bg{
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots.png");
 }
 .bg-lines-h2-bg{
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines.png");
 }
 .bg-atlanta-20made-20sign{
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/design.gif");
 }
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/orange.gif");
 }
 @media (max-width: 1024px){
     .bloc {

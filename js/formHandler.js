@@ -11,7 +11,6 @@ $(function()
 			
 				var processorFile = getProcessorPath($form);
 				var formData = {};
-
 				$form.find("input, textarea, option:selected").each(function(e) // Loop over form objects build data object
 				{		
 					var fieldData =  $(this).val();
@@ -29,10 +28,8 @@ $(function()
 					{
 						fieldID = $(this).parent().attr('id');
 					}
-					
 					formData[fieldID] = fieldData;		
 				});
-	
 				$.ajax({
 		        	url: processorFile,
 		    		type: "POST",
@@ -66,7 +63,6 @@ $(function()
 			 return $(this).is(":visible");
          },
 	 });
-	 
 	 // Get Path to processor PHP file
 	 function getProcessorPath(form)
 	 {
@@ -76,7 +72,6 @@ $(function()
 		{
 			path = form.attr('template-path')+"/includes/"+form.attr('id')+".php";
 		}
-		
 	 	return path
 	 }
 });
